@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RAG Q&A Assistant</title>
+</head>
+<body>
+    <h1>Ask a Question</h1>
+    <form method="post">
+        <input type="text" name="query" size="80">
+        <input type="submit" value="Ask">
+    </form>
+    <h3>Agent Decision Log</h3>
+    <ul>{% for step in log %}<li>{{ step }}</li>{% endfor %}</ul>
+    <h3>Retrieved Context</h3>
+    <pre>{{ context }}</pre>
+    <h3>Answer</h3>
+    <p>{{ answer }}</p>
+</body>
+</html>

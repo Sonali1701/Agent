@@ -1,0 +1,6 @@
+Flask
+langchain
+langchain_community
+faiss-cpu
+groq
+huggingface-hub
