@@ -74,6 +74,9 @@ Ask a question like:
 
 Agents retrieve, reason, and respond based on document context
 
+## License
+
+This project is licensed under the [MIT License](LICENSE).
 
 
 
