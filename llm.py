@@ -1,7 +1,12 @@
 # llm.py
 from groq import Groq
+from dotenv import load_dotenv
+import os
 
-client = Groq(api_key="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")
+load_dotenv()
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+client = Groq(api_key=GROQ_API_KEY)
+
 
 def ask_llm(context, query):
     prompt = f"Answer the question based on the following context:\n{context}\n\nQ: {query}\nA:"
