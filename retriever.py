@@ -5,7 +5,7 @@ embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-Mi
 
 def get_top_chunks(query, k=3):
     # Enable deserialization by setting allow_dangerous_deserialization=True
-    db = FAISS.load_local("index", embeddings, allow_dangerous_deserialization=True)
+    db = FAISS.load_local("index", embedding_model, allow_dangerous_deserialization=True)
 
     docs = db.similarity_search(query, k=k)
     return docs
