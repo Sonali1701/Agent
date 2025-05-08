@@ -5,3 +5,4 @@ faiss-cpu
 groq
 huggingface-hub
 python-dotenv
+sentence_transformers
